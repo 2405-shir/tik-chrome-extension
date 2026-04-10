@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #f5f5f5;
+  width: 360px;
+}
+
+.wrap { padding: 16px; }
+h1 { margin: 0 0 8px; font-size: 22px; }
+.sub { margin: 0 0 14px; color: #bdbdbd; font-size: 13px; line-height: 1.35; }
+.card {
+  background: #1d1d1d;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  font-size: 13px;
+}
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fe2c55;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:nth-child(2), button:nth-child(3) { background: #333; }
+button:nth-child(4) { background: #1f6feb; }
+.message {
+  min-height: 18px;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #9dd2ff;
+}
+.footer {
+  margin-top: 12px;
+  font-size: 11px;
+  color: #a0a0a0;
+  line-height: 1.4;
+}

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "TikTok CSV",
+  "version": "1.0.0",
+  "description": "Auto-scroll a TikTok profile, capture post metrics from TikTok API responses, and export to CSV.",
+  "permissions": ["storage", "tabs", "downloads"],
+  "host_permissions": ["*://*.tiktok.com/*"],
+  "action": {
+    "default_title": "TikTok CSV",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.tiktok.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page-bridge.js"],
+      "matches": ["*://*.tiktok.com/*"]
+    }
+  ]
+}

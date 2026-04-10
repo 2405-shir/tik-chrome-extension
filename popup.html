@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TikTok CSV</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>TikTok CSV</h1>
+    <p class="sub">Open a TikTok profile page, then start capture.</p>
+
+    <div class="card">
+      <div class="row"><span>Status</span><strong id="status">Idle</strong></div>
+      <div class="row"><span>Profile</span><strong id="profile">-</strong></div>
+      <div class="row"><span>Posts</span><strong id="posts">0</strong></div>
+      <div class="row"><span>Responses</span><strong id="responses">0</strong></div>
+      <div class="row"><span>Page</span><strong id="pageType">-</strong></div>
+    </div>
+
+    <div class="actions">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+      <button id="clearBtn">Clear</button>
+      <button id="exportBtn">Export CSV</button>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <div class="footer">
+      Fields exported: video URL, description, likes, comments, shares, bookmarks, views, dates, music, and author info.
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
